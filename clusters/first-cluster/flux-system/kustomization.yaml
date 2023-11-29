@@ -15,11 +15,11 @@ patches:
             containers:
               - name: manager
                 env:
-                  - name: "https_proxy"
+                  - name: "HTTPS_PROXY"
                     value: "http://10.113.55.34:8080"
-                  - name: "http_proxy"
+                  - name: "HTTP_PROXY"
                     value: "http://10.113.55.34:8080"
-                  - name: "no_proxy"
+                  - name: "NO_PROXY"
                     value: ".cluster.local.,.cluster.local,.svc"      
     target:
       kind: Deployment
