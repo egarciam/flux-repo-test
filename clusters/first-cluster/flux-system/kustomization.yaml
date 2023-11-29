@@ -17,8 +17,6 @@ patches:
                 env:
                   - name: "HTTPS_PROXY"
                     value: "http://10.113.55.34:8080"
-                  - name: "HTTP_PROXY"
-                    value: "http://10.113.55.34:8080"
                   - name: "NO_PROXY"
                     value: ".cluster.local.,.cluster.local,.svc,10.244.0.0/16,172.18.0.0/16"      
     target:
